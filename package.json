@@ -2,10 +2,12 @@
   "name": "mern",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "main": "backend/server.js",
+
+  "scripts" : {
+"dev" : "nodemon backend/server.js"
+},
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Carvalhop2/Mern.git"
@@ -13,7 +15,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/Carvalhop2/Mern/issues"
   },
@@ -21,6 +23,5 @@
   "dependencies": {
     "dotenv": "^17.2.3",
     "express": "^5.2.1"
-  },
-  "devDependencies": {}
+  }
 }
