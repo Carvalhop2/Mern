@@ -1,6 +1,7 @@
 import express from 'express';
 import "dotenv/config.js";
 import mongoose from "mongoose";
+import {Book} from './models/Book.js';
 
 
 const app = express();
@@ -17,7 +18,7 @@ export async function connectToDatabase() {
 
 app.listen (3000, () => {
     console.log('Server is running on port 3000. CLTR+C to stop. Eita Deus');
-   // connectToDatabase();
+    connectToDatabase();
 });
 
 }
