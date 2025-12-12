@@ -13,12 +13,14 @@ Content-Type:{{contentType}}
 "cover": "link"
 }
 
+###
 GET {{baseUrl}}/books
 Content-Type:{{contentType}}
-
+###
 GET {{baseUrl}}/books/id
 Content-Type:{{contentType}}
 
+###
 /*Atualiza um livro existente, ou seja, uma pesquisa por id*/
 PUT {{baseUrl}}/books/id   
 Content-Type:{{contentType}}
@@ -28,5 +30,6 @@ Content-Type:{{contentType}}
     "author": "Goku"
 }
 
+###
 DELETE {{baseUrl}}/books/id
 Content-Type:{{contentType}}
