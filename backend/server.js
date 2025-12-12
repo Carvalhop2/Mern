@@ -4,6 +4,7 @@ import mongoose from "mongoose";
 
 
 const app = express();
+
 export async function connectToDatabase() {
    try {
     await mongoose.connect(process.env.MONGO_URI);
@@ -16,7 +17,7 @@ export async function connectToDatabase() {
 
 app.listen (3000, () => {
     console.log('Server is running on port 3000. CLTR+C to stop. Eita Deus');
-    connectToDatabase();
+   // connectToDatabase();
 });
 
 }
