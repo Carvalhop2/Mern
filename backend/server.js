@@ -4,7 +4,7 @@ import mongoose from "mongoose";
 
 
 const app = express();
-async function connectToDatabase() {
+export async function connectToDatabase() {
    try {
     await mongoose.connect(MONGO_URL);
     console.log("Connected to MongoDB");
