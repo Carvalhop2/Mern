@@ -24,6 +24,16 @@ app.post("/api/v1/books", async (req, res) => {
 
 });
 
+    app.get("/api/v1/books", async (req, res) => {
+    try {
+        const books = await Book.find();
+        res.status(200).json({sucess: true, data: books}); 
+    } catch (error) {
+        console.error("Erro na busca por livos:", error);
+        res.status(500).json({sucess: false, erro: "Erro ao buscar por livro"});
+    }     
+}); 
+
 app.listen (3000, () => {
     console.log('Server is running on port 3000. CLTR+C to stop. Teste do Servidor');
     connectToDatabase();
