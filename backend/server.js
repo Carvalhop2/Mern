@@ -25,7 +25,7 @@ app.post("/api/v1/books", async (req, res) => {
 });
 
 app.listen (3000, () => {
-    console.log('Server is running on port 3000. CLTR+C to stop. Eita Deus');
+    console.log('Server is running on port 3000. CLTR+C to stop. Teste do Servidor');
     connectToDatabase();
 });
 
