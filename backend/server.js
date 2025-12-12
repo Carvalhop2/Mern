@@ -3,10 +3,13 @@ import "dotenv/config.js";
 import { connectToDatabase } from './db/connect.js';
 import { Book } from './model/book.model.js';
 
+
 const app = express();
 
+app.use(express.json());
+
 app.post("/api/v1/books", async (req, res) => {
-   
+    
     const { title, subtitle, author, genre, cover } = req.body;
     
     try{

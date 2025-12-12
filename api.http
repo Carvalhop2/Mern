@@ -6,7 +6,7 @@ POST {{baseUrl}}/books
 
 Content-Type:{{contentType}}
 {
-"title": "Java como Progrmar",
+"title": "Java como Programar",
 "subtitle": "Aprenda Java em 21 anos",
 "author": "H. M Deitel",
 "genre": "Livro Técnico",
