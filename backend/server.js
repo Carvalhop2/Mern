@@ -6,7 +6,9 @@ import { Book } from './model/book.model.js';
 const app = express();
 
 app.post("/api/v1/books", async (req, res) => {
+   
     const { title, subtitle, author, genre, cover } = req.body;
+    
     try{
         const book = new Book({title, subtitle, author, genre, cover});
         await book.save();
