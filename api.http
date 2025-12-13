@@ -3,15 +3,16 @@
 @contentType = application/json
 
 POST {{baseUrl}}/books
+Content-Type: {{contentType}}
 
-Content-Type:{{contentType}}
 {
-"title": "Java como Programar",
-"subtitle": "Aprenda Java em 21 anos",
-"author": "H. M Deitel",
-"genre": "Livro Técnico",
-"cover": "linkdacapa.com"
+  "title": "Java como Programar",
+  "subtitle": "Aprenda Java em 21 anos",
+  "author": "H. M Deitel",
+  "genre": "Livro Técnico",
+  "cover": "linkdacapa.com"
 }
+
 
 ###
 GET {{baseUrl}}/books
@@ -22,13 +23,14 @@ Content-Type:{{contentType}}
 
 ###
 /*Atualiza um livro existente, ou seja, uma pesquisa por id*/
-PUT {{baseUrl}}/books/id   
-Content-Type:{{contentType}}
+PUT {{baseUrl}}/books/ID_AQUI
+Content-Type: {{contentType}}
 
 {
-    "subtitle": "Python 3.12",
-    "author": "Goku"
+  "subtitle": "Python 3.12",
+  "author": "Goku"
 }
+
 
 ###
 DELETE {{baseUrl}}/books/id
