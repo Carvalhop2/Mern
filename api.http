@@ -1,0 +1,14 @@
+@host = http://localhost:3000
+
+@baseUrl={{host}}/api/v1
+@contentType=application/json
+POST {{baseUrl}}/books
+Content-Type:{{contentType}}
+
+    {   "title": "Java como programar",
+        "subtitle": "Guia técnico sobre POO e Java",
+        "author": "H. Deitel e M. Deitel",
+        "genre": "Programação Orientada a Objetos / Tecnologia Java",
+        "cover": "https://share.google/QXwXjHXdpxcO73OwZ"
+    }
+
